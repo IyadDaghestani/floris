@@ -1,0 +1,77 @@
+body {
+  display: block;
+  margin: 8px;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: bold;
+  font-size: 35px;
+}
+.article-date {
+  font-weight: bold;
+  float: left;
+  margin: 0 2rem 1rem 0;
+  font-family: 18px;
+}
+.article {
+  font-family: Times New Roman;
+  width: 600px;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  margin: auto;
+}
+.image-caption {
+  background: tomato;
+  padding: 5px;
+  color: white;
+  overflow: right;
+  margin: 5px 5px 5px 1px;
+  width: 300px;
+}
+.image-left {
+  float: left;
+  margin: auto;
+}
+.quote-right {
+  float: right;
+  width: 300px;
+  margin: 16px;
+  padding: 16px;
+  border-left: 4px solid green;
+}
+.quote-left {
+  float: left;
+  margin: 16px;
+  padding: 16px;
+  border-right: 4px solid green;
+  width: 300px;
+}
+blockquote {
+  margin: 30px;
+  padding: 30px;
+}
+.quote-right::before {
+  content: open-quote;
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  font-family: serif;
+  color: gray;
+  z-index: -2;
+}
+.quote-left::after {
+  content: open-quote;
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  font-family: serif;
+  color: green;
+  z-index: -2;
+}
